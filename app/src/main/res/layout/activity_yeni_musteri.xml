@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/newsr"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".yeniMusteri">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:hint="Alınan Tarih"
+            android:layout_marginTop="30dp"
+            android:id="@+id/alinanTarih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date" />
+
+        <EditText
+            android:hint="Müşteri ID"
+            android:layout_marginTop="10dp"
+            android:id="@+id/musteriID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:hint="Kıyafet Ağırlığı"
+            android:layout_marginTop="10dp"
+            android:id="@+id/kiyafetAgirligi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/kiyafetTipi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Kıyafet Tipi" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:textSize="17dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/gunlukYikama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Günlük Yıkama" />
+
+            <CheckBox
+                android:textSize="17dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/uzunYikama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Uzun Yıkama" />
+
+            <CheckBox
+                android:id="@+id/tamiratOlustur"
+                android:textSize="17dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tamirat" />
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/kiyafetOlustur"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="35dp"
+            android:background="#88C9D5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oluştur" />
+
+        <Button
+            android:id="@+id/geri_don3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="#DA7382"
+            android:text="Geri Dön" />
+
+
+    </LinearLayout>
+</LinearLayout>
